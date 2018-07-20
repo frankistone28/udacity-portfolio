@@ -1,0 +1,169 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    max-width: 100%;
+    padding-top: 20px;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/header.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.nav-item {
+    margin-left: 32px;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-light .navbar-nav .nav-link:link,
+.navbar-light .navbar-nav .nav-link:visited {
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s, color 0.3s;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #c0cdd8;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+    color: rgb(79, 104, 125);
+    border-bottom: 2px solid #02b3e4;
+}
+
+.navbar-toggler {
+    background: rgba(192, 205, 216, .3);
+}
+
+.header-text-box {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #c0cdd8;
+}
+
+.header-feature {
+    color: #7d97ad;
+}
+
+#footer {
+    padding: 50px;
+    padding-bottom: 20px;
+    background: #2d3c49;
+}
+
+.footer-nav,
+.social-links {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li,
+.social-links li {
+    margin-right: 16px;
+    padding: 5px;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-links a:link,
+.social-links a:visited {
+    color: #c0cdd8;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active {
+    color: rgb(79, 104, 125);
+}
+
+a:link .fa-facebook,
+a:link .fa-twitter,
+a:link .fa-google-plus,
+a:link .fa-instagram {
+    transition: color .3s;
+}
+
+a:hover .fa-facebook,
+a:active .fa-facebook {
+    color: #3b5998;
+}
+
+a:hover .fa-twitter,
+a:active .fa-twitter {
+    color: #08aced;
+}
+
+a:hover .fa-google-plus,
+a:active .fa-google-plus {
+    color: #dd4b39;
+}
+
+a:hover .fa-instagram,
+a:active .fa-instagram {
+    color: #517fa4;
+}
+
+.lead {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    color: #c0cdd8;
+}
+
+@media screen and (max-width:575px) {
+    .header {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/header2.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .social-links {
+        justify-content: end;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    .header-text-box {
+        width: 400px;
+    }
+    .header-text-box h1 {
+        font-size: 50px;
+    }
+    .header-text-box h2 {
+        font-size: 38px;
+    }
+}
+
+@media (min-width:768px) {
+    .header-text-box {
+        width: 600px;
+    }
+    .header-text-box h1 {
+        font-size: 70px;
+    }
+    .header-text-box h2 {
+        font-size: 45px;
+    }
+    .navbar-light .navbar-nav .nav-link:link,
+    .navbar-light .navbar-nav .nav-link:visited,
+    .social-links a:link,
+    .social-links a:visited {
+        font-size: 18px;
+    }
+}
